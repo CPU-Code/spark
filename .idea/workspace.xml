@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c30375d5-2500-4ad5-bea6-45138ec430fb" name="Default Changelist" comment="初始化">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordCount/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordCount/src/main/java/com/cpucode/spark/wc/word/count/WordCountEnv.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordCount/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wordCount/src/main/resources/word.txt" afterDir="false" />
+    <list default="true" id="c30375d5-2500-4ad5-bea6-45138ec430fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wordCount/src/main/java/com/cpucode/spark/wc/reduce/WcReduce.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordCount/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/wordCount/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordCount/wordCount.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wordCount/wordCount.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,20 @@
       <recent name="D:\Data\github\spark\wordCount" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.WcReduce">
+    <configuration name="WcReduce" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.cpucode.spark.wc.reduce.WcReduce" />
+      <module name="wordCount" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cpucode.spark.wc.reduce.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WordCountEnv" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.cpucode.spark.wc.word.count.WordCountEnv" />
       <module name="wordCount" />
@@ -90,6 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WcReduce" />
         <item itemvalue="Application.WordCountEnv" />
       </list>
     </recent_temporary>
@@ -107,7 +115,7 @@
       <workItem from="1644330000362" duration="2081000" />
       <workItem from="1644381045297" duration="411000" />
       <workItem from="1644381473804" duration="151000" />
-      <workItem from="1644401157750" duration="2088000" />
+      <workItem from="1644401157750" duration="4625000" />
     </task>
     <task id="LOCAL-00001" summary="初始化">
       <created>1644331244678</created>
@@ -123,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644401180804</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WordCount求大小">
+      <created>1644403439783</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644403439783</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,38 +149,55 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="WordCount求大小" />
+    <option name="LAST_COMMIT_MESSAGE" value="WordCount求大小" />
   </component>
   <component name="WindowStateProjectService">
     <state x="428" y="110" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1644401652305">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="428" y="110" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/78.0.1458.864@78.0.1458.864" timestamp="1644401652305" />
-    <state x="411" y="23" key="CommitChangelistDialog2" timestamp="1644403427853">
+    <state x="411" y="23" key="CommitChangelistDialog2" timestamp="1644403438859">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="411" y="23" key="CommitChangelistDialog2/78.0.1458.864@78.0.1458.864" timestamp="1644403427853" />
+    <state x="411" y="23" key="CommitChangelistDialog2/78.0.1458.864@78.0.1458.864" timestamp="1644403438859" />
     <state x="724" y="234" key="FileChooserDialogImpl" timestamp="1644381124589">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
     <state x="589" y="187" key="FileChooserDialogImpl/78.0.1458.864@78.0.1458.864" timestamp="1644330132665" />
     <state x="724" y="234" key="FileChooserDialogImpl/78.0.1842.1080@78.0.1842.1080" timestamp="1644381124589" />
-    <state width="1415" height="273" key="GridCell.Tab.0.bottom" timestamp="1644403219523">
+    <state width="1415" height="270" key="GridCell.Tab.0.bottom" timestamp="1644407443532">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="273" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1644403219523" />
-    <state width="1415" height="273" key="GridCell.Tab.0.center" timestamp="1644403219522">
+    <state width="1415" height="270" key="GridCell.Tab.0.bottom/78.0.1458.864@78.0.1458.864" timestamp="1644407443532" />
+    <state width="1415" height="270" key="GridCell.Tab.0.center" timestamp="1644407443532">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="273" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1644403219522" />
-    <state width="1415" height="273" key="GridCell.Tab.0.left" timestamp="1644403219522">
+    <state width="1415" height="270" key="GridCell.Tab.0.center/78.0.1458.864@78.0.1458.864" timestamp="1644407443532" />
+    <state width="1415" height="270" key="GridCell.Tab.0.left" timestamp="1644407443531">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="273" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1644403219522" />
-    <state width="1415" height="273" key="GridCell.Tab.0.right" timestamp="1644403219522">
+    <state width="1415" height="270" key="GridCell.Tab.0.left/78.0.1458.864@78.0.1458.864" timestamp="1644407443531" />
+    <state width="1415" height="270" key="GridCell.Tab.0.right" timestamp="1644407443532">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state width="1415" height="273" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1644403219522" />
+    <state width="1415" height="270" key="GridCell.Tab.0.right/78.0.1458.864@78.0.1458.864" timestamp="1644407443532" />
+    <state width="1415" height="270" key="GridCell.Tab.1.bottom" timestamp="1644407407139">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="270" key="GridCell.Tab.1.bottom/78.0.1458.864@78.0.1458.864" timestamp="1644407407139" />
+    <state width="1415" height="270" key="GridCell.Tab.1.center" timestamp="1644407407139">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="270" key="GridCell.Tab.1.center/78.0.1458.864@78.0.1458.864" timestamp="1644407407139" />
+    <state width="1415" height="270" key="GridCell.Tab.1.left" timestamp="1644407407138">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="270" key="GridCell.Tab.1.left/78.0.1458.864@78.0.1458.864" timestamp="1644407407138" />
+    <state width="1415" height="270" key="GridCell.Tab.1.right" timestamp="1644407407139">
+      <screen x="78" y="0" width="1458" height="864" />
+    </state>
+    <state width="1415" height="270" key="GridCell.Tab.1.right/78.0.1458.864@78.0.1458.864" timestamp="1644407407139" />
     <state x="639" y="237" key="NewModule_or_Project.wizard" timestamp="1644381151864">
       <screen x="78" y="0" width="1842" height="1080" />
     </state>
@@ -174,10 +206,10 @@
       <screen x="78" y="0" width="1458" height="864" />
     </state>
     <state x="309" y="74" key="SettingsEditor/78.0.1458.864@78.0.1458.864" timestamp="1644330282582" />
-    <state x="400" y="154" key="Vcs.Push.Dialog.v2" timestamp="1644401182796">
+    <state x="400" y="154" key="Vcs.Push.Dialog.v2" timestamp="1644403489938">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
-    <state x="400" y="154" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1644401182796" />
+    <state x="400" y="154" key="Vcs.Push.Dialog.v2/78.0.1458.864@78.0.1458.864" timestamp="1644403489938" />
     <state x="217" y="127" key="new project wizard" timestamp="1644330148823">
       <screen x="78" y="0" width="1458" height="864" />
     </state>
