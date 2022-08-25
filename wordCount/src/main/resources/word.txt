@@ -1,3 +1,0 @@
-cpu text code
-cpucode cpu
-code
